@@ -66,7 +66,7 @@ namespace BankingAPI.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<byte[]>("PinMask")
+                    b.Property<byte[]>("PinHash")
                         .IsRequired()
                         .HasColumnType("varbinary(max)");
 
